@@ -1,0 +1,5 @@
+<div *ngFor='let singleGoal of goal'>
+<p>{{singleGoal.description}}</p>
+<p>This goal will be complete in {{singleGoal.completeDate|dateCount}} days</p>
+<button (click)= 'goalDelete(true)' class="btn btn-outline-danger">Delete Goal</button>
+</div>
