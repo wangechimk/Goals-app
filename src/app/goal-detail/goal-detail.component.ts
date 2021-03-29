@@ -22,6 +22,7 @@ export class GoalDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('goal.this.goal');
   }
 
 }

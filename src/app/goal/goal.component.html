@@ -10,13 +10,13 @@
           <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
         </div>
 
-        <div *ngIf='goal.showDescription'>
+        <div *ngIf='goals[i].showDescription'>
           <app-goal-detail  [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-detail>
         </div>
       </div>
     </div>
     <div class="col-md-6">
-      <app-goal-form></app-goal-form>
+      <app-goal-form (addGoal)="addNewGoal($event)"></app-goal-form>
     </div>
 
   </div>
